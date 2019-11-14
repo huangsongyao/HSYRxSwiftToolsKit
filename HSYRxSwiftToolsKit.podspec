@@ -21,16 +21,16 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/317398895@qq.com/HSYRxSwiftToolsKit'
+  s.homepage         = 'https://github.com/huangsongyao/HSYRxSwiftToolsKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '317398895@qq.com' => '317398895@qq.com' }
-  s.source           = { :git => 'https://github.com/317398895@qq.com/HSYRxSwiftToolsKit.git', :tag => s.version.to_s }
+  s.author           = { 'huangsongyao@foxmail.com' => '317398895@qq.com' }
+  s.source           = { :git => 'https://github.com/huangsongyao/HSYRxSwiftToolsKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'HSYRxSwiftToolsKit/Classes/**/*'
+  s.source_files = 'HSYRxSwiftToolsKit/Classes/**/*.{swift}'
   
   # s.resource_bundles = {
   #   'HSYRxSwiftToolsKit' => ['HSYRxSwiftToolsKit/Assets/*.png']
@@ -39,4 +39,7 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RxSwift'
+  s.dependency 'RxCocoa'
+  
 end

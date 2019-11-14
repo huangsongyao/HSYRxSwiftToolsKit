@@ -1,0 +1,6 @@
+framework module HSYRxSwiftToolsKit {
+  umbrella header "HSYRxSwiftToolsKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

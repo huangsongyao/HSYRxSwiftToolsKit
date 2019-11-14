@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0FE80DA1A031038AA19C2ABE /* HSYRxSwiftToolsKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HSYRxSwiftToolsKit.podspec; path = ../HSYRxSwiftToolsKit.podspec; sourceTree = "<group>"; };
-		336DBEE61A99D4C2BA644DB2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0FE80DA1A031038AA19C2ABE /* HSYRxSwiftToolsKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HSYRxSwiftToolsKit.podspec; path = ../HSYRxSwiftToolsKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		336DBEE61A99D4C2BA644DB2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3E87F542FC3F22668D303DF1 /* Pods-HSYRxSwiftToolsKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSYRxSwiftToolsKit_Example.release.xcconfig"; path = "Target Support Files/Pods-HSYRxSwiftToolsKit_Example/Pods-HSYRxSwiftToolsKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3FE964BE1DD737DDCEB5157B /* Pods-HSYRxSwiftToolsKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSYRxSwiftToolsKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-HSYRxSwiftToolsKit_Tests/Pods-HSYRxSwiftToolsKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* HSYRxSwiftToolsKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSYRxSwiftToolsKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +46,7 @@
 		BE3006A60C92E71AA5D9F0E8 /* Pods-HSYRxSwiftToolsKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSYRxSwiftToolsKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HSYRxSwiftToolsKit_Tests/Pods-HSYRxSwiftToolsKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D20DA67FC58D89C1A3BC8E97 /* Pods_HSYRxSwiftToolsKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSYRxSwiftToolsKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49B76C4E0D549EC588E7F02 /* Pods-HSYRxSwiftToolsKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSYRxSwiftToolsKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-HSYRxSwiftToolsKit_Example/Pods-HSYRxSwiftToolsKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F9331C37369527ED17B4B6F9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F9331C37369527ED17B4B6F9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				BE3006A60C92E71AA5D9F0E8 /* Pods-HSYRxSwiftToolsKit_Tests.debug.xcconfig */,
 				3FE964BE1DD737DDCEB5157B /* Pods-HSYRxSwiftToolsKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -271,10 +271,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HSYRxSwiftToolsKit_Example/Pods-HSYRxSwiftToolsKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/HSYRxSwiftToolsKit/HSYRxSwiftToolsKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HSYRxSwiftToolsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
